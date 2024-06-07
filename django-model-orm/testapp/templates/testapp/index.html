@@ -1,0 +1,16 @@
+<body>
+  <table border="1" style="width: 100%;">
+    <tr>
+      <td>날짜</td>
+      <td>항목</td>
+      <td>가격</td>
+    </tr>
+    {% for date, name, price in items %}
+    <tr>
+      <td>{{ date }}</td>
+      <td>{{ name }}</td>
+      <td>{{ price }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
